@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Practice</title>
+    <link rel="stylesheet" href="math.css">
+</head>
+<body>
+<center>
+    <div class="container">
+        <h1>Addition Practice</h1>
+        <div id="digitSelection">
+            <label for="digits">Number of digits:</label>
+            <input type="number" id="digits" min="2" value="2">
+            <button onclick="startPractice()">Start</button>
+        </div>
+        <div id="problem" class="hidden">
+            <p id="question"></p>
+            <input type="number" id="answer">
+            <button onclick="checkAnswer()">Submit</button>
+        </div>
+        <div id="result" class="hidden">
+            <p id="resultMessage"></p>
+            <button onclick="quitPractice()">Quit</button>
+        </div>
+    </div>
+<br>
+    <footer>
+        <p>sonali</p>
+    </footer>
+    <script src="math.js"></script>
+</center>
+</body>
+</html>
